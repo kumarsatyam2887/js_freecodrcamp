@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>General questions</title>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<h1>General questions</h1>
+			<ul class="ul-list">
+				<li>
+					<div class="open">
+						<h3>This is a questions</h3>	
+						<button class="openbtn">
+							<div class="first first1"></div>
+							<div class="first first2"></div>
+							<div class="first first2"></div>
+					
+						</button>
+						
+					</div>
+						<p class="remove paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+						</p>
+				</li>
+
+				<li>
+					<div class="open">
+						<h3>This is a question ff s</h3>	
+						<button class="openbtn">
+							<div class="first first1"></div>
+							<div class="first first2"></div>
+							<div class="first first2"></div>
+					
+						</button>
+						
+					</div>
+						<p class="remove paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+						</p>
+				</li>
+
+				<li>
+					<div class="open">
+						<h3>This is a question s2 </h3>	
+						<button class="openbtn">
+							<div class="first first1"></div>
+							<div class="first first2"></div>
+							<div class="first first2"></div>
+					
+						</button>
+						
+					</div>
+						<p class="remove paragraph">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven
+						</p>
+				</li>
+
+
+			</ul>
+		</div>
+	</div>
+
+
+	<script>
+		// btn.forEach((e)=>{console.log(e.parentNode.parentNode.children[1])})
+		let btn = document.querySelectorAll('.openbtn')
+		btn.forEach((e)=>{
+			e.addEventListener('click',(event)=>{
+				event.currentTarget.parentNode.parentNode.children[1].classList.toggle('remove')
+				event.currentTarget.parentNode.parentNode.children[1].classList.toggle('rotate')
+					
+			})
+		})
+	</script>
+</body>
+</html>

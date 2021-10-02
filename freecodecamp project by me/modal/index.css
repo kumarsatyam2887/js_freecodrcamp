@@ -1,0 +1,75 @@
+header{
+	    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('file:///C:/xampp/htdocs/php%20basics/forum/website/img/5.png');
+    background-size: 100% 100%;
+    border: 2px solid;
+    background-repeat: no-repeat;
+}
+
+
+
+.banner{
+	    border: 2px solid white;
+    background-color: white;
+    width: 30vw;
+    height: 34vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*display: none;*/
+    border-radius: 12px;
+}
+
+
+h1{
+	font-size: 2.6rem;
+}
+
+.btn{
+	    width: 150px;
+    height: 34px;
+    background-color: #0bace1;
+    border: 2px;
+    color: white;
+    font-size: 21px;
+}
+
+.header{
+	    border: 2px solid red;
+    position: absolute;
+    top: 34%;
+    left: 34.7%;
+    border-radius: 12px;
+}
+
+
+
+.modal{
+	    border: 1px;
+    background-color: white;
+    position: absolute;
+    top: 4%;
+    right: 1%
+}
+
+.first{
+    border: 2px solid;
+    width: 25px;
+    margin: 8px;
+}
+
+#f1{
+transform: rotate(45deg);
+}
+
+
+#f2{
+transform: rotate(123deg);
+    position: relative;
+    top: -12px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<title>color flipper</title>
+</head>
+<body>
+	<div class="container">
+		<div class="color">
+			<h1>Background color</h1>
+			<span id="span">#fff</span>
+		</div>
+
+		<button id="btn">Click here</button>
+
+
+	</div>
+
+	<script>
+		let btn = document.getElementById('btn')
+		let span = document.getElementById('span')
+
+			const hex = [0,1,2,3,4,5,6,7,8,9,"A","B","C","D","E","F"]
+
+		btn.addEventListener('click',changecolor)
+		function changecolor () {
+			
+		
+
+				
+				let hex_color = "#";
+				for(let i = 0;i<6;i++){
+					const randomnumber = getnumber()
+					hex_color+=hex[randomnumber]
+
+				}
+
+				console.log('btn pressed '+ hex_color)
+				span.textContent = hex_color
+				document.body.style.backgroundColor = hex_color
+			
+		}
+		function getnumber () {
+			return Math.floor(Math.random()*hex.length);
+		}
+
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

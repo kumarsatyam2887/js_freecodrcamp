@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>modal</title>
+</head>
+<body>
+	<header>
+		<div class="banner" id="banner1">
+			<h1>Modal project</h1>
+			<button class="btn" id="btn">open modal</button>
+		</div>
+	</header>
+
+
+	<div class="header">
+		<div class="banner" id="banner2" style="display: none;">
+			
+		</style>>
+			<h1>Modal project dialog</h1>
+			<button class="modal">
+				<div class="first" id="f1"></div>
+				<div class="first" id="f2"></div>
+			</button>
+		</div>
+	</div>
+
+
+
+<script>
+	const btn = document.querySelector('.modal')
+	const upperbtn = document.getElementById('btn')
+	const banner1 = document.getElementById('banner1')
+	const banner2 = document.getElementById('banner2')
+	const header = document.querySelector('header')
+
+	btn.addEventListener('click',(e) => {
+	  banner2.style.display = 'none';
+	  banner1.style.display = 'flex';
+	  header.style.backgroundBlendMode = 'normal';	
+	  	
+	  
+	});
+
+	upperbtn.addEventListener('click',(e) => {
+	  banner2.style.display = 'block';
+	  banner1.style.display = 'none';
+	  header.style.backgroundImage = "url('file:///C:/xampp/htdocs/php%20basics/forum/website/img/5.png'),linear-gradient(45deg,red,green)";
+	  header.style.backgroundBlendMode = 'lighten';	
+	  
+	});
+	
+</script>
+
+</body>
+</html>
